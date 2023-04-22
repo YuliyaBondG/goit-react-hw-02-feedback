@@ -5,3 +5,7 @@
   margin-right: auto;
   width: 1280px;
 }
+h2 {
+  color: blue;
+  text-decoration: underline;
+}
