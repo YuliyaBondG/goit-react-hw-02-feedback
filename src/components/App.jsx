@@ -14,9 +14,12 @@ export class App extends Component {
 
   updateState = newFeedback => {
     this.setState(currFeedback => {
-      let obj = { ...currFeedback };
-      obj[newFeedback] = currFeedback[newFeedback] + 1;
-      return obj;
+      return {
+        [newFeedback]: currFeedback[newFeedback] + 1,
+      };
+      // let obj = { ...currFeedback };
+      // obj[newFeedback] = currFeedback[newFeedback] + 1;
+      // return obj;
     });
   };
   // загальна кількість відгуків
